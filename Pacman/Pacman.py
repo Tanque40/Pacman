@@ -5,11 +5,13 @@ import random
 import copy
 import os
 
-BoardPath = "Assets/BoardImages/"
-ElementPath = "Assets/ElementImages/"
-TextPath = "Assets/TextImages/"
-DataPath = "Assets/Data/"
-MusicPath = "Assets/Music/"
+absolutePath = os.path.dirname(__file__)
+
+BoardPath = os.path.join(absolutePath, "Assets/BoardImages/")
+ElementPath = os.path.join(absolutePath, "Assets/ElementImages/")
+TextPath = os.path.join(absolutePath, "Assets/TextImages/")
+DataPath = os.path.join(absolutePath, "Assets/Data/")
+MusicPath = os.path.join(absolutePath, "Assets/Music/")
 
 pygame.mixer.init()
 pygame.init()
